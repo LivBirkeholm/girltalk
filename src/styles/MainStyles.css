@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #f7c7d9;
+  --secondary-color: #1d1d1d;
+  --tertiary-color: #fc4d5c;
+  --quaternary-color: #273aaa;
+  --quinary-color: #fff5eb;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  margin-left: 40px;
+  margin-right: 40px;
+}
