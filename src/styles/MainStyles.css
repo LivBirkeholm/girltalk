@@ -20,7 +20,7 @@ body {
 
 h2 {
   font-size: 40px;
-  font-family: obviously, sans-serif;
+  font-family: "obviously", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-shadow: 2px 2px var(--quinary-color);
@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   color: var(--secondary-color);
-  font-family: archivo-variable, sans-serif;
+  font-family: "archivo-variable", sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 140%;
@@ -37,7 +37,7 @@ h3 {
 
 p {
   color: var(--secondary-color);
-  font-family: archivo-variable, sans-serif;
+  font-family: "archivo-variable", sans-serif;
   font-weight: 600;
   font-size: 24;
   line-height: 140%;
@@ -58,15 +58,3 @@ p {
     font-size: 16px;
   }
 }
-
-/*
-font-family: obviously, sans-serif;
-font-weight: 700;
-font-style: normal;
-*/
-
-/*
-font-family: archivo-variable, sans-serif;
-font-weight: 600;
-font-width: 100;
-*/
