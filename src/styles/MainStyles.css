@@ -26,6 +26,15 @@ h2 {
   text-shadow: 2px 2px var(--quinary-color);
 }
 
+h3 {
+  color: var(--secondary-color);
+  font-family: archivo-variable, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: -5%;
+}
+
 p {
   color: var(--secondary-color);
   font-family: archivo-variable, sans-serif;
@@ -39,6 +48,10 @@ p {
   h2 {
     font-size: 34px;
     text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   p {
