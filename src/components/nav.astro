@@ -12,29 +12,37 @@
     <p>PODCAST</p>
     <p>LOKALE FÆLLESKABER</p>
 </div>
+
+<div class="pil">
+    <img src="/public/pil.svg" alt="Pil">
+</div>
 </article>
 
 <style>
 
-    p{
-        font-family: archivo-variable, sans-serif;
-        font-size: 18px;
-        color: var(  --tertiary-color);
-        text-shadow: 1px 0px #fff5eb;
-    }
-
-    .nav{
-        display: flex; 
-        justify-content: center; 
-        padding-top: 45px;
-    }
-
-    .nav p {
-    margin: 0 10px; 
-    }
-
-    .nav p:not(:last-child) {
-    margin-right: 139px; /* Juster denne verdien for å kontrollere gapet */
+p {
+    font-family: archivo-variable, sans-serif;
+    font-size: 18px;
+    color: var(--tertiary-color);
+    text-shadow: 1px 0px #fff5eb;
 }
-    
+
+.nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 45px;
+}
+
+.nav p {
+    margin: 0 -45px; /* Tilføj en margen på 20px på begge sider af hvert <p> element */
+}
+
+
+.pil{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 7%;    
+}
+
 </style>
