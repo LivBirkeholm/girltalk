@@ -14,8 +14,36 @@ img {
 
 body {
   background-color: var(--primary-color);
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: obviously, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 2px var(--quinary-color);
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: archivo-variable, sans-serif;
+  font-weight: 600;
+  font-size: 24;
+  line-height: 140%;
+  letter-spacing: -5%;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 /*
