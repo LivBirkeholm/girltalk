@@ -9,40 +9,40 @@
             <img src="./computer.svg" alt="computer">
         </div>
         <div>
-            <h2 class="blaa luft">CHATRÅRDGIVNING</h2>
+            <h2 class="blaa">CHATRÅRDGIVNING</h2>
             <p>GirlTalks chatrådgivning er for dig mellem 12 og 24 år. Du kan chatte med vores ungerådgivere hver aften eller sende en sms til os hele døgnet</p>
             <p>Du er altid anonym og kan trygt dele dine tanker med os. Vi glæder os til at skrive med dig</p>
             <a href="https://www.girltalk.dk/vores-tilbud/chat-med-os/"><img class="chatknap" src="./chatknap.svg" alt="chat"></a>
         </div>
 
-        <div class="billede luft">
+        <div class="billede luft luft2">
             <img src="./lys.svg" alt="pære">
         </div>
         <div>
-            <h2 class="roed luft">VIDENSUNIVERS</h2>
+            <h2 class="roed">VIDENSUNIVERS</h2>
             <p>Viden om alt det, der er vigtigt for dig! Bliv klogere, bryd tabuer og find ud af, hvordan andre har det med at være ung lige nu.</p>
             <p>I vores videnunivers kan du læse om alt fra familie og venner, krop og sex, selvværd, kærlighed, skole og uddannelse, trivsel og andet.</p>
         </div>
 
-        <div class="billede luft">
+        <div class="billede luft luft2">
             <img src="./brev.svg" alt="brev">
         </div>
         <div>
-            <h2 class="blaa luft">BREVKASSE</h2>
+            <h2 class="blaa">BREVKASSE</h2>
             <p>Pigetanker er vores brevkasse. Her kan du læse andres tanker og dele dine egne helt anonymt. Vi svarer på spørgsmål om ALT.</p>
             <p>Har du nogle tanker, du har brug for at få ud af hovedet, så de fylder mindre? Del dem med os her eller læs andre pigers spørgsmål, følelser og oplevelser.</p>
         </div>
 
-        <div class="billede luft">
+        <div class="billede luft luft2">
             <img src="./horetelefoner.svg" alt="høretelefoner">
         </div>
         <div>
-            <h2 class="roed luft">PODCAST</h2>
+            <h2 class="roed">PODCAST</h2>
             <p>I GirlTalks podcast er  vi sammen med ugens gæster fortæller vi dig, at du altid er god nok, men vi er her, når du bliver i tvivl.</p>
             <p>I GirlTalks taler vi om alt det, der kan være svært at tale om. Gæsterne deler personlige erfaringer og viden inden for alt lige fra mobning, mental sundhed, kropsissues, sex og selvkærlighed.</p>
         </div>
 
-        <div class="billede">
+        <div class="billede luft2">
             <img src="./blomster.svg" alt="brev">
         </div>
         <div>
@@ -61,17 +61,32 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
-    gap: 10px;
+    gap: 30px;
 }
 div:nth-child(4n-1){
     grid-column: 2;
 }
+.luft{
+    padding-bottom: 150px;
 }
 .titel{
     text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
     color: var(--tertiary-color);
+}
+}
+
+@media (max-width:800px){
+    .luft2{
+        padding-top: 100px;
+    }
+    .titel{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    color: var(--tertiary-color);
+}
 }
 .blaa{
     color: var(--quaternary-color);
@@ -84,9 +99,6 @@ text-align: center;
 }
 .chatknap{
     width: 40%;
-}
-.luft{
-    padding-bottom: 150px;
 }
 
 </style>
