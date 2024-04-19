@@ -7,8 +7,8 @@
         <p>CHATRÅDGIVNING</p>
         <p>VIDENSUNIVERS</p>
         <p>BREVKASSE</p>
-        <p>PODCAST</p>
-        <p>LOKALE FÆLLESKABER</p>
+        <p class="nav_padding">PODCAST</p>
+        <p class="nav_padding">LOKALE FÆLLESKABER</p>
     </div>
 
     <div class="pil"> 
@@ -54,15 +54,21 @@
             color: var(  --tertiary-color);
             text-shadow: 1px 0px #fff5eb;
         }
+
     
     .nav {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px; 
     text-align: center;
     padding-top: 45px;
     padding-bottom: 95px;
     }
 
+    .nav_padding{
+        padding-left: 79%;
+    }
+   
     .nav p {
     margin: 0 7px; 
     }
