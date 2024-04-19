@@ -4,11 +4,11 @@
 
 <article>
     <div class="nav">
-        <p>CHATRÅDGIVNING</p>
-        <p>VIDENSUNIVERS</p>
-        <p>BREVKASSE</p>
-        <p class="nav_padding">PODCAST</p>
-        <p class="nav_padding">LOKALE FÆLLESKABER</p>
+        <a href="https://www.girltalk.dk/vores-tilbud/chat-med-os/">CHATRÅDGIVNING</a>
+        <a href="https://www.girltalk.dk/viden/">VIDENSUNIVERS</a>
+        <a href="https://www.girltalk.dk/pigetanker/">BREVKASSE</a>
+        <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/podcast/">PODCAST</a>
+        <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/faellesskaber/">FÆLLESKABER</a>
     </div>
 
     <div class="pil"> 
@@ -18,17 +18,20 @@
     
 <style>
     
-        p{
+        a, a:visited{
             font-family: archivo-variable, sans-serif;
             font-size: 18px;
             color: var(  --tertiary-color);
-            text-shadow: 1px 0px #fff5eb;
+            text-shadow: 1px 0px var(--quinary-color);
+            text-decoration: none;
         }
     
     .nav {
     display: flex; 
+    flex-direction: row;
     justify-content: space-between; 
     padding-top: 45px;
+    padding-bottom: 200px;
     }
 
     .nav p {
@@ -38,9 +41,8 @@
 
     .pil {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-     height: 11%; 
+    position: fixed;
+    justify-content: center;
     }
 
    .pil_svg {
@@ -48,11 +50,8 @@
     }
 
     @media (max-width:800px){
-        p{
-            font-family: archivo-variable, sans-serif;
+        a, a:visited {
             font-size: 9px;
-            color: var(  --tertiary-color);
-            text-shadow: 1px 0px #fff5eb;
         }
 
     
@@ -66,7 +65,7 @@
     }
 
     .nav_padding{
-        padding-left: 79%;
+        padding-left: 75%;
     }
    
     .nav p {
