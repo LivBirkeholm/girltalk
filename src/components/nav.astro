@@ -1,7 +1,6 @@
 ---
 ---
 
-
 <article>
     <div class="nav">
         <a href="https://www.girltalk.dk/vores-tilbud/chat-med-os/">CHATRÅDGIVNING</a>
@@ -10,11 +9,13 @@
         <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/podcast/">PODCAST</a>
         <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/faellesskaber/">FÆLLESKABER</a>
     </div>
+
+    <div class="pil">
+        <img class="pil_svg" src="/public/pil.svg" width="139" height="44" alt="Pil"> 
+    </div>
 </article>
 
-<div class="pil"> 
-    <img class="pil_svg" src="/public/pil.svg" width="139" height="44" alt="Pil"> 
-</div>
+
     
 <style>
     
@@ -92,3 +93,18 @@
     }
 
 </style>
+
+<script>
+    document.addEventListener('click', function(event) {
+        if (event.target.closest('.pil')) {
+            scrollToBottom();
+        }
+    });
+
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+</script>
