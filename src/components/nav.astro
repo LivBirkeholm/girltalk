@@ -10,21 +10,21 @@
         <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/podcast/">PODCAST</a>
         <a class="nav_padding" href="https://www.girltalk.dk/vores-tilbud/faellesskaber/">FÆLLESKABER</a>
     </div>
-
-    <div class="pil"> 
-        <img class="pil_svg" src="/public/pil.svg" width="139" height="44" alt="Pil"> 
-    </div>
 </article>
+
+<div class="pil"> 
+    <img class="pil_svg" src="/public/pil.svg" width="139" height="44" alt="Pil"> 
+</div>
     
 <style>
     
-        a, a:visited{
-            font-family: archivo-variable, sans-serif;
-            font-size: 18px;
-            color: var(  --tertiary-color);
-            text-shadow: 1px 0px var(--quinary-color);
-            text-decoration: none;
-        }
+    a, a:visited{
+        font-family: archivo-variable, sans-serif;
+        font-size: 18px;
+        color: var(  --tertiary-color);
+        text-shadow: 1px 0px var(--quinary-color);
+        text-decoration: none;
+    }
     
     .nav {
     display: flex; 
@@ -40,13 +40,19 @@
 
 
     .pil {
-    display: flex;
     position: fixed;
+    top: 85%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     justify-content: center;
+    z-index: 9999;
     }
+    
 
    .pil_svg {
-    padding-top: 9%;
+    width: 105px; 
+    height: 105px; 
     }
 
     @media (max-width:800px){
@@ -55,34 +61,34 @@
         }
 
     
-    .nav {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 20px; 
-    text-align: center;
-    padding-top: 45px;
-    padding-bottom: 95px;
-    }
+       .nav {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px; 
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 95px;
+        }
 
-    .nav_padding{
+      .nav_padding{
         padding-left: 75%;
-    }
+        }
    
-    .nav p {
-    margin: 0 7px; 
-    }
+      .nav p {
+      margin: 0 7px; 
+      }
 
 
-    .pil {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-     height: 11%; 
-    }
+      .pil {
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       height: 11%; 
+       }
 
-   .pil_svg {
-    display: none;
+      .pil_svg {
+       display: none;
+       }
     }
-}
 
 </style>
