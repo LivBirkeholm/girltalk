@@ -6,7 +6,7 @@
     <h2 class="titel">VORES INDSATSER</h2>
     <div class="grid-1-1">
         <div class="billede luft" id="billedeElement">
-            <img width="660" height="458" src="./computer.svg" alt="computer">
+            <img width="475.2" height="329.76" src="./computer.svg" alt="computer">
         </div>
         <div id="tekstElement">
             <h2 class="blaa">CHATRÅRDGIVNING</h2>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="billede luft luft2">
-            <img width="362" height="323.14" src="./brev.svg" alt="brev">
+            <img width="293.22" height="261.75" src="./brev.svg" alt="brev">
         </div>
         <div>
             <h2 class="blaa">BREVKASSE</h2>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="billede luft2">
-            <img width="214.7" height="233.71" src="./blomster.svg" alt="brev">
+            <img width="246.91" height="268.77" src="./blomster.svg" alt="brev">
         </div>
         <div>
             <h2 class="blaa">LOKALE FÆLLESSKABER</h2>
@@ -56,7 +56,7 @@
 
 
 <style>
-@media (min-width:800px){
+@media (min-width:950px){
 .grid-1-1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,20 +76,21 @@ div:nth-child(4n-1){
     color: var(--tertiary-color);
 }
 
+
+
 #tekstElement, #billedeElement {
-    opacity: 0;
     transform: translateX(-50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* CSS for animationen, der flytter elementerne ind på siden */
+CSS for animationen, der flytter elementerne ind på siden 
 .animateElement {
-    opacity: 1;
     transform: translateX(0);
 }
+
 }
 
-@media (max-width:800px){
+@media (max-width:950px){
     .luft2{
         padding-top: 100px;
     }
@@ -98,6 +99,15 @@ div:nth-child(4n-1){
     padding-bottom: 50px;
     padding-top: 100px;
     color: var(--tertiary-color);
+
+    .grid-1-1 {
+justify-content: center;
+    }
+    
+    img {
+        width: 60%;
+    }
+
 }
 }
 .blaa{
