@@ -1,5 +1,6 @@
 // Lyt efter scrollbegivenheder
 window.addEventListener("scroll", function () {
+  console.log(window.scrollY);
   // Find højden på vinduet og dokumentet
   var windowHeight = window.innerHeight;
   var docHeight = document.body.clientHeight;
